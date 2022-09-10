@@ -58,22 +58,6 @@ public class MainActivity extends AppCompatActivity {
 
         cargaUsuarios();
 
-        btnBuscar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int pos = spnUsuario.getSelectedItemPosition();
-                User objUsuario = lstUsuarios.get(pos);
-
-                String msg = "";
-                msg += "Nombre : " + objUsuario.getName() +"\n";
-                msg += "Username : " + objUsuario.getUsername() +"\n";
-                msg += "Email : " + objUsuario.getEmail() +"\n";
-                msg += "Phone : " + objUsuario.getPhone() +"\n";
-                msg += "Website : " + objUsuario.getWebsite() +"\n";
-
-                txtSalida.setText(msg);
-            }
-        });
 
     }
 
